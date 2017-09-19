@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <style>
+          .info img{
+              position: relative;
+              display: block;
+              width: 50px;
+              height: 50px;
+          }
+      </style>
+  </head>
+  <body>
+    <div>
+        <h3><%= artical_data.ID%>.<%= artical_data.title%></h3>
+        <div class="info">
+            <img src="<%= artical_data.author_src%>">
+        </div>
+        <div>
+            <p>作者：<%= artical_data.author%></p>
+            <p>时间：<%= artical_data.sDate%></p>
+        </div>
+    </div>
+    <div>
+        <p><%- artical_data.content%></p>
+    </div>
+
+  </body>
+</html>
